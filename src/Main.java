@@ -3,14 +3,18 @@ public class Main {
 
         CarrinhoDeCompras c = new CarrinhoDeCompras();
 
-        c.adicionarItem("Leite", 4.00f, 3);
+        c.adicionarItem("Leite", 4.00f, 4);
         c.adicionarItem("Papel Higienico", 20.00f, 1);
         c.adicionarItem("Chocolate", 5.00f, 2);
         c.adicionarItem("Carne", 25.00f, 1);
         c.adicionarItem("Óleo", 7.00f, 6);
         c.adicionarItem("Água", 2.00f, 20);
 
+
+        c.removerItem("Leite");
         c.exibirItens();
+
+        System.out.println("O valor totoal da compra é = " + c.calcularValorTotal());
 
     }
 }
